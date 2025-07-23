@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stark Industries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <div class="h-12 bg-gray-800"></div>
+
+  
+  <header class="bg-blue-900 shadow-md  sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center h-32">
+      <img class="w-40" src="stark.logo.jpg" alt="">
+
+      
+      
+      <button class="md:hidden text-white" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
+      <nav class="space-x-6 hidden md:block text-lg font-bold text-white">
+        <a href="index.html" class="hover:text-lime-300">Home</a>
+        <a href="#about" class="hover:text-lime-300">About</a>
+        <a href="services.html" class="hover:text-lime-300 ">Services</a>
+        <a href="contact.html" class="hover:text-lime-300">Contact</a>
+        <a href="gallery.html" class="hover:text-lime-300">Gallery</a>
+      </nav>
+      <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Login</a>
+    </div>
+
+    
+    
+    <div id="mobile-menu" class="hidden md:hidden space-y-4 bg-blue-900 p-4 text-center">
+      <a href="index.html" class="block text-white">Home</a>
+      <a href="#about" class="block text-white">About</a>
+      <a href="services.html" class="block text-white">Services</a>
+      <a href="contact.html" class="block text-white">Contact</a>
+      <a href="gallery.html" class="block text-white">Gallery</a>
+    </div>
+  
+
+
+    
+  </header>
+  <section>
+    
+  </section>
+
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-700 mb-8">Gallery</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image.1.jpg" alt="Company Event" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Clean Energy Projects</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image.2.jpg" alt="Team Building" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Research & Development Labs</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="arc_reactor.jpg" alt="Office" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Hero Technology</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image.4.jpg" alt="Workshop" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800"> AI & Robotics</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image.6.jpg" alt="Workshop" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Stark Industries Facilities</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image.5.jpg" alt="Workshop" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Aerospace & Defense</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="bus.jpg" alt="Workshop" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Air Cargo Terminal</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="image.3.jpg" alt="Workshop" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-800">Warehouse</h3>
+            <p class="text-gray-500 text-sm"></p>
+          </div>
+        </div>
+
+       
+
+       
+
+
+
+      
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; Stark Industries All rights reserved.</p>
+  </footer>
+
+   <script>
+    
+    document.getElementById("hamburger-btn").addEventListener("click", function() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

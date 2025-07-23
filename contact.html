@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stark Industries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <div class="h-12 bg-gray-800"></div>
+
+  
+  <header class="bg-blue-900 shadow-md  sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center h-32">
+      <img class="w-40" src="stark.logo.jpg" alt="">
+
+      
+      <button class="md:hidden text-white" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+          </path>
+        </svg>
+      </button>
+
+      <nav class="space-x-6 hidden md:block text-lg font-bold text-white">
+        <a href="index.html" class="hover:text-lime-300">Home</a>
+        <a href="#about" class="hover:text-lime-300">About</a>
+        <a href="services.html" class="hover:text-lime-300 ">Services</a>
+        <a href="contact.html" class="hover:text-lime-300">Contact</a>
+        <a href="gallery.html" class="hover:text-lime-300">Gallery</a>
+      </nav>
+      <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Login</a>
+    </div>
+
+    
+    <div id="mobile-menu" class="hidden md:hidden space-y-4 bg-blue-900 p-4 text-center">
+      <a href="index.html" class="block text-white">Home</a>
+      <a href="#about" class="block text-white">About</a>
+      <a href="services.html" class="block text-white">Services</a>
+      <a href="contact.html" class="block text-white">Contact</a>
+      <a href="gallery.html" class="block text-white">Gallery</a>
+    </div>
+  </header>
+
+  <figure class="">
+
+    <img class="h-screen w-screen " src="image.01.jpg" alt="image description">
+
+    <figcaption class="absolute px-20 text-6xl text-blue-500 bottom-6">
+      <h1 class="text-white font-bold"></h1>
+    </figcaption>
+  </figure>
+
+
+  
+  <section id="contact" class="bg-blue-300 py-16 px-4 md:px-20 rounded-t-3xl">
+  <h3 class="text-3xl font-bold mb-6 text-center text-blue-600">Contact Us</h3>
+  <div class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-xl">
+    <form id="contactForm" class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg" required>
+      <textarea rows="5" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    alert("Your message has been sent.");
+    this.reset(); 
+  });
+</script>
+
+
+  
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy;Stark Industries All right reserved.</p>
+  </footer>
+
+  <script>
+  
+    document.getElementById("hamburger-btn").addEventListener("click", function () {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+
+</html>

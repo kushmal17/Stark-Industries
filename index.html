@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stark Industries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+  <div class="h-12 bg-gray-800"></div>
+
+  <header class="bg-blue-900 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center h-32">
+      <img class="w-40" src="stark.logo.jpg" alt="Logo">
+      
+      <button class="md:hidden text-white" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <nav id="navbar" class="space-x-6 hidden md:block text-lg font-bold text-white">
+        <a href="indx.html" class="hover:text-lime-300">Home</a>
+        <a href="#about" class="hover:text-lime-300">About</a>
+        <a href="services.html" class="hover:text-lime-300">Services</a>
+        <a href="contact.html" class="hover:text-lime-300">Contact</a>
+        <a href="gallery.html" class="hover:text-lime-300">Gallery</a>
+      </nav>
+      
+      <a href="login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Login</a>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden space-y-4 bg-blue-900 p-4 text-center">
+      <a href="indx.html" class="block text-white">Home</a>
+      <a href="#about" class="block text-white">About</a>
+      <a href="services.html" class="block text-white">Services</a>
+      <a href="contact.html" class="block text-white">Contact</a>
+      <a href="gallery.html" class="block text-white">Gallery</a>
+    </div>
+  </header>
+
+
+  <section class="bg-gray-100 bg-center h-[85vh] flex items-center justify-center text-center"
+    style="background-image: url('image.01.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <div class="bg-blue-500 bg-opacity-50 p-8 rounded-xl">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Stark Industries</h1>
+      <p class="text-white text-lg md:text-xl mb-6">Arms and Technology Company</p>
+      <a href="#services"
+        class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">Explore
+        Services</a>
+    </div>
+  </section>
+
+  
+  <section id="about" class="py-16 px-4 md:px-20 bg-gray-50">
+    <h3 class="text-3xl font-bold mb-10 text-center text-blue-600">About Us</h3>
+
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <img src="Howard_Stark.jpg" alt="Director" class="w-40 h-40 object-cover rounded-full border-4 border-blue-600 shadow-md">
+      <div>
+        <h4 class="text-2xl font-semibold text-gray-800">Howard Stark</h4>
+        <p class="text-blue-600 font-medium mb-2">Founder & Director</p>
+        <p class="text-gray-700 font-bold">Stark Industries was founded by Howard Stark in 1939, a great pioneer in different types of technology and constantly assisted the United States Armed Forces with different 
+        and innovative weapons, helping the government to develop the Project Rebirth in the 1940s.</p>
+      </div>
+    </div>
+
+    
+    <div class="mt-16">
+      <h4 class="text-2xl font-semibold text-center text-blue-600 mb-10">Our Team</h4>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        
+        <div>
+          <img src="tony_stark.jpg" alt="Employee 1"
+            class="w-32 h-32 mx-auto object-cover rounded-full border-4 border-blue-500 shadow">
+          <h5 class="mt-4 font-semibold text-gray-800">Tony Stark</h5>
+          <p class="text-blue-600">Chairman of Stark Industries</p>
+        </div>
+
+        
+        <div>
+          <img src="obadiah.jpg" alt="Employee 2"
+            class="w-32 h-32 mx-auto object-cover rounded-full border-4 border-blue-500 shadow">
+          <h5 class="mt-4 font-semibold text-gray-800">Obadiah Stane</h5>
+          <p class="text-blue-600">Executive Officer</p>
+        </div>
+
+        
+        <div>
+          <img src="Happy_Hogan.jpg" alt="Employee 3"
+            class="w-32 h-32 mx-auto object-cover rounded-full border-4 border-blue-500 shadow">
+          <h5 class="mt-4 font-semibold text-gray-800">Happy Hogan</h5>
+          <p class="text-blue-600">Former head of Security</p>
+        </div>
+
+
+         <div>
+          <img src="pepper_potts.jpg" alt="Employee 4"
+            class="w-32 h-32 mx-auto object-cover rounded-full border-4 border-blue-500 shadow">
+          <h5 class="mt-4 font-semibold text-gray-800">Pepper Potts</h5>
+          <p class="text-blue-600">CEO</p>
+        </div>
+
+      
+        <div>
+          <img src="dr.jpg" alt="Employee 4"
+            class="w-32 h-32 mx-auto object-cover rounded-full border-4 border-blue-500 shadow">
+          <h5 class="mt-4 font-semibold text-gray-800">Dr. Gray Armond</h5>
+          <p class="text-blue-600">Head Designer</p>
+        </div>
+
+      
+        <div>
+          <img src="harmon.jpg" alt="Employee 5"
+            class="w-32 h-32 mx-auto object-cover rounded-full border-4 border-blue-500 shadow">
+          <h5 class="mt-4 font-semibold text-gray-800">Harmon Furmintz</h5>
+          <p class="text-blue-600">Member of Stark Industries' biochemical division.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services" class="py-16 px-4 md:px-20">
+    <h3 class="text-3xl font-bold mb-10 text-center text-blue-600">Why Choose Us</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-300 shadow-md rounded-xl text-center">
+        <h4 class="font-bold text-xl mb-2">Customized Solutions</h4>
+        <p>We tailor our services to meet the unique needs of each client, ensuring personalized solutions that drive success.</p>
+      </div>
+      <div class="p-6 bg-gray-300 shadow-md rounded-xl text-center">
+        <h4 class="font-bold text-xl mb-2">Expert Team</h4>
+        <p>Our team of industry experts utilizes cutting-edge technology to deliver efficient and cost-effective logistics operations.</p>
+      </div>
+      <div class="p-6 bg-gray-300 shadow-md rounded-xl text-center">
+        <h4 class="font-bold text-xl mb-2">Reliability Guaranteed</h4>
+        <p>Trusted for our dedication to customer satisfaction, we provide reliable services that meet the highest standards of quality.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; Stark Industries All rights reserved.</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById("hamburger-btn").addEventListener("click", function() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
