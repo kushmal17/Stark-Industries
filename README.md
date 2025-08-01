@@ -2,6 +2,7 @@
 
 
 🏢 Stark Industries Website
+
 This is a fictional corporate website for Stark Industries, inspired by the Marvel Cinematic Universe. The website presents a sleek, futuristic design and showcases various sections like company overview, technologies, products, team, and contact info — just like a real-world tech giant's web presence.
 
 ✨ Features
